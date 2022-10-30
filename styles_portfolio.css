@@ -1,6 +1,7 @@
 * {
     box-sizing: border-box;
     margin: 0;
+    font-family: Lato, helvetica;
 }
 
 /* --- HEADER --- */
@@ -24,6 +25,7 @@ header {
     align-items: center;
     width: 100%;
     height: 8vh;
+    padding: 0 4vh 0 4vh;
     background-color: rgb(50, 50, 50);
     color: #fff;
 }
@@ -50,3 +52,47 @@ header {
     transition: 0.5s;
 }
 
+/* --- MAIN  --- */
+
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(202, 202, 202) ;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    padding: 4vh;
+}
+
+.acerca_de {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+}
+
+.acerca_de > img {
+    border-radius: 50%;
+    width: 150px;
+    padding-right: 5vh;
+}
+
+h1 {
+    font-size: 5vh;
+}
+
+h3 {
+    font-size: 3vh;
+}
+
+h2 {
+    font-size: 4vh;
+}
+
+p {
+    font-size: 2vh;
+    padding: 1vh;
+}
