@@ -58,38 +58,65 @@ main {
     width: 100%;
     display: flex;
     flex-direction: column;
-    background-color: rgb(202, 202, 202) ;
-}
-
-section {
-    display: flex;
-    flex-direction: column;
-    padding: 4vh;
-}
-
-.acerca_de {
-    display: flex;
-    flex-direction: row;
-    justify-content: start;
+    background-color: rgb(150, 150, 150) ;
+    justify-content: center;
     align-items: center;
 }
 
-.acerca_de > img {
-    border-radius: 50%;
-    width: 150px;
-    padding-right: 5vh;
-}
-
-h1 {
-    font-size: 5vh;
-}
-
-h3 {
-    font-size: 3vh;
+section {
+    width: 98%;
+    display: flex;
+    flex-direction: column;
+    margin: 2vh 2vh 0 2vh;
+    padding: 1vh;
+    border-radius: 15px;
+    background-color: rgb(202, 202, 202)
 }
 
 h2 {
     font-size: 4vh;
+    padding: 1vh;
+}
+
+/* -- Perfil -- */
+
+.acerca_de {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.perfil {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.foto_perfil {
+    border-radius: 50%;
+    width: 150px;
+}
+
+.descripcion_perfil {
+    padding: 4vh;
+    align-items: center;
+}
+
+.logo_uba > img {
+    width: 70px;
+    color: #fff;
+    margin-right: 4vh;
+}
+
+h1 {
+    font-size: 5vh;
+    padding: 1vh;
+}
+
+h3 {
+    font-size: 3vh;
+    padding: 1vh;
 }
 
 p {
