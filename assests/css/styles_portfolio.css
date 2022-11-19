@@ -13,7 +13,7 @@ header {
     background-color: rgb(0, 0, 0);
     width: 100%;
     height: 50vh;
-    background-image: url(assets/Imagenes/banner_mc.jpeg);
+    background-image: url(assests\Imagenes\banner_mc.jpeg);
     background-size: cover;
     background-position: center;
 }
