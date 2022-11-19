@@ -5,34 +5,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Matias Centurion</title>
-    <link rel="stylesheet" href="styles_portfolio.css">
+    <!-- CSS-->
+    <link rel="stylesheet" href="assests/css/styles_portfolio.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Fontawesome-->
     <script src="https://kit.fontawesome.com/d6cb9562bc.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
-        <div class="barra_login">
+        <div class="nav-bar-sup">
             <div class="link_arg_prog">
-                <a href="https://argentinaprograma.inti.gob.ar/" target = "_blank"><img src="Imagenes/APLogo-20-20.png" alt="Argentina Programa #YoProgramo" width="100px"></a>
+                <a href="https://argentinaprograma.inti.gob.ar/" target = "_blank"><img src="assests/Imagenes/APLogo-20-20.png" alt="Argentina Programa #YoProgramo" width="100px"></a>
             </div>
             <div class="link_redes">
                 <a href="https://www.linkedin.com/in/matias-centurion-a1baa9218/" target="_blank" class="fa-brands fa-linkedin"></a>
                 <a href="https://www.facebook.com/m.e.centurion/" target = "_blank" class= "fa-brands fa-facebook"></a>
                 <a href="https://github.com/MeCent" target = "_blank" class= "fa-brands fa-github"></a>
             </div>
-            <form action="Login.html" target="_blank">
-                <label for="Usuario">Usuario:</label>
-                <input size="30" type="text" name="usuario" placeholder="Ingrese su usuario aqui..." title="Nombre de Usuario" required>
-                <label for="pwd">Contraseña:</label>
-                <input type="password" id="pwd1" name="pwd1" pattern=".{8,}" placeholder="Ingrese su contraseña aqui..." title="Ingrese 8 o más caracteres" required>
-                <input type="submit" value="Enviar datos">
-            </form>
+            <div class="login-container">
+                <form class="login-form" target="_blank">
+                    <label for="email">Email:</label>
+                    <input size="30" type="text" name="usuario" placeholder="Ingrese su email" title="Nombre de Usuario" required>
+                    <label for="pwd">Contraseña:</label>
+                    <input type="password" id="pwd1" name="pwd1" pattern=".{8,}" placeholder="Ingrese su contraseña" title="Ingrese 8 o más caracteres" required>
+                    <input type="submit" value="Enviar datos">
+                </form>
+            </div>
         </div>
     </header>
 
     <main>
         <section class="acerca_de">
             <div class="perfil">
-                <img class="foto_perfil" src="Imagenes/CV.jpg" alt="Foto de Perfil">
+                <img class="foto_perfil" src="assests/Imagenes/CV.jpg" alt="Foto de Perfil">
                 <div class="descripcion_perfil">
                     <h1>Matias Centurion</h1>
                     <h3>Full Stack Developer Jr.</h3>
@@ -40,7 +45,7 @@
                 </div>
             </div>
             <div class="logo_uba" >
-                <img src="Imagenes/logo_uba.png" alt="UBA">
+                <img src="assests/Imagenes/logo_uba.png" alt="UBA">
             </div>
 
         </section>
@@ -63,12 +68,12 @@
         <section class="educacion">
             <h2>Educación</h2>
             <dl>
-                <dt>Curso 1</dt>
-                <dd>Instituto</dd>
-                <dd>Titulo</dd>
-                <dd>Año</dd>
+                <dt>Arquitectura</dt>
+                <dd>FADU - Universidad de Buenos Aires</dd>
+                <dd>Carrera de grado</dd>
+                <dd>2009 - 2021</dd>
             <br>
-                <dt>Curso 2</dt>
+                <dt>Argentina Programa</dt>
                 <dd>Instituto</dd>
                 <dd>Titulo</dd>
                 <dd>Año</dd>
@@ -109,7 +114,7 @@
     <footer>
 
     </footer>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 
 </html>
