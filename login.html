@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+        <!-- CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+        <link rel="stylesheet" href="assests/css/styles_portfolio.css">
+        <!-- Fontawesome -->
+        <script src="https://kit.fontawesome.com/d6cb9562bc.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <!-- Barra de Navegación superior -->
+        <nav class="navbar navbar-expand-lg bg-negro">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="https://argentinaprograma.inti.gob.ar" target="_blank">
+                    <img src="assests/Imagenes/APLogo-20-20.png" alt="Argentina Programa #YoProgramo" width="100px">
+                </a>
+                <ul class="list-group list-group-horizontal">
+                    <li class="list-group-item"><a href="https://www.linkedin.com/in/matias-centurion-a1baa9218/" target="_blank"><i class="fa-brands fa-linkedin fa-2x text-white"></i></a></li>
+                    <li class="list-group-item"><a href="https://www.facebook.com/m.e.centurion/" target = "_blank"><i class="fa-brands fa-facebook fa-2x text-white"></i></a></li>
+                    <li class="list-group-item"><a href="https://github.com/MeCent" target = "_blank"><i class="fa-brands fa-github fa-2x text-white"></i></a></li>
+                    <li class="list-group-item"> <!-- Login -->
+                        <a href="login.html"><i class="fa-solid fa-right-to-bracket fa-2x text-white"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col-2">
+                </div>
+                <div class="col-8 login">
+                    <div class="modal-body">
+                        <form>
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1">
+                                <div id="emailHelp" class="form-text text-white">Ingrese 8 o más caractéres.</div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-secondary">Ingresar</button>
+                        <a class="btn btn-secondary ms-3" href="registro.html" role="button">Registrarse</a>
+                    </div>
+                </div>
+                <div class="col-2">
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="bg-dark text-center text-white">
+        <div class="container p-5 pb-2">
+            <div class="mb-2">
+                <a class="btn btn-outline-light btn-floating m-1" href="https://www.linkedin.com/in/matias-centurion-a1baa9218/" target="_blank" role="button">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a class="btn btn-outline-light btn-floating m-1" href="https://www.facebook.com/m.e.centurion/" target = "_blank" role="button">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/MeCent" target= "_blank" role="button">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+            <div class="text-center p-1">
+                <p>© 2022 <b>Matias Centurion</b> - Todos los derechos reservados</p>
+                <a class="text-white" href="index.html">INICIO</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</body>
+</html>

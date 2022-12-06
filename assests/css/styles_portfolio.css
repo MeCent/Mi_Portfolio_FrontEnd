@@ -64,7 +64,7 @@ h4 {
 
 main {
     width: 100%;
-    height:100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     background-color: rgb(150, 150, 150) ;
@@ -98,4 +98,11 @@ h5 {
 .col-2 {
     justify-content: center;
     align-items: center;
+}
+
+/* -- SECCIONES -- */
+
+.login {
+    margin-top: 5%;
+    margin-bottom: 6%;
 }
