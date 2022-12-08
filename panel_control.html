@@ -43,29 +43,107 @@
             </div>
             <div class="col-9">
                 <div class="tab-content" id="nav-tabContent">
-                    <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">INFOOOO</div>
+                    <!-- Panel Info -->
+                    <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
+                        <div class="container pe-5">
+                            <form>
+                                <div class="mb-3">
+                                    <label for="fotoperfil" class="form-label">Foto de Perfil</label>
+                                    <input class="form-control" type="file" id="fotoperfil">
+                                    <div class="botones mt-3">
+                                        <button type="button" class="btn btn-success">Guardar</button>
+                                        <button type="button" class="btn btn-danger">Eliminar</button>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="nombreusuario" class="form-label">Nombre de Usuario</label>
+                                    <input type="text" class="form-control" id="nombreusuario">
+                                    <div class="botones mt-3">
+                                        <button type="button" class="btn btn-success">Guardar</button>
+                                        <button type="button" class="btn btn-danger">Eliminar</button>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="acercademi" class="form-label">Acerca de Mí</label>
+                                    <textarea class="form-control" id="acercademi" style="height: 100px"></textarea>
+                                    <div class="botones mt-3">
+                                        <button type="button" class="btn btn-success">Guardar</button>
+                                        <button type="button" class="btn btn-danger">Eliminar</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <!-- Panel Redes -->
                     <div class="tab-pane fade" id="list-redes" role="tabpanel" aria-labelledby="list-redes-list">
                         <div class="container pe-5">
                             <form>
                                 <div class="mb-3">
                                     <label for="linkedin" class="form-label">LinkedIn</label>
                                     <input type="text" class="form-control" id="linkedin">
-                                    <button type="button" class="btn btn-primary">Guardar</button>
-
+                                    <div class="botones mt-3">
+                                        <button type="button" class="btn btn-success">Guardar</button>
+                                        <button type="button" class="btn btn-danger">Eliminar</button>
+                                    </div>
                                 </div>
                                 <div class="mb-3">
                                     <label for="facebook" class="form-label">Facebook</label>
                                     <input type="text" class="form-control" id="facebook">
+                                    <div class="botones mt-3">
+                                        <button type="button" class="btn btn-success">Guardar</button>
+                                        <button type="button" class="btn btn-danger">Eliminar</button>
+                                    </div>
                                 </div>
                                 <div class="mb-3">
                                     <label for="github" class="form-label">GitHub</label>
                                     <input type="text" class="form-control" id="github">
+                                    <div class="botones mt-3">
+                                        <button type="button" class="btn btn-success">Guardar</button>
+                                        <button type="button" class="btn btn-danger">Eliminar</button>
+                                    </div>
                                 </div>
                             </form>
                         </div>
                     </div>
-                    <div class="tab-pane fade" id="list-banner" role="tabpanel" aria-labelledby="list-banner-list">...</div>
-                    <div class="tab-pane fade" id="list-trabajo" role="tabpanel" aria-labelledby="list-trabajo-list">WORKSSSSSSSSS</div>
+                    <!-- Panel Banner -->
+                    <div class="tab-pane fade" id="list-banner" role="tabpanel" aria-labelledby="list-banner-list">
+                        <div class="container pe-5">
+                            <form>
+                                <div class="mb-3">
+                                    <label for="banner" class="form-label">Imagen de Banner</label>
+                                    <input class="form-control" type="file" id="banner">
+                                    <div class="botones mt-3">
+                                        <button type="button" class="btn btn-success">Guardar</button>
+                                        <button type="button" class="btn btn-danger">Eliminar</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <!-- Panel Trabajo -->
+                    <div class="tab-pane fade" id="list-trabajo" role="tabpanel" aria-labelledby="list-trabajo-list">
+                        <div class="container pe-5">
+                            <form>
+                                <div class="mb-3">
+                                    <label for="imgempresa" class="form-label">Imagen de Empresa</label>
+                                    <input class="form-control" type="file" id="imgempresa">
+                                    <div class="botones mt-3">
+                                        <button type="button" class="btn btn-success">Guardar</button>
+                                        <button type="button" class="btn btn-danger">Eliminar</button>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="acercadetrabajo" class="form-label">Acerca de Empresa</label>
+                                    <textarea class="form-control" id="acercadetrabajo" style="height: 100px"></textarea>
+                                    <div class="botones mt-3">
+                                        <button type="button" class="btn btn-success">Guardar</button>
+                                        <button type="button" class="btn btn-danger">Eliminar</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <!-- Panel Educación -->
                     <div class="tab-pane fade" id="list-educacion" role="tabpanel" aria-labelledby="list-educacion-list">...</div>
                     <div class="tab-pane fade" id="list-habilidades" role="tabpanel" aria-labelledby="list-habilidades-list">...</div>
                     <div class="tab-pane fade" id="list-proyectos" role="tabpanel" aria-labelledby="list-proyectos-list">...</div>
