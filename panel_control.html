@@ -29,52 +29,80 @@
     </header>
 
     <main>
-        <div class="container-fluid"> <!-- Login -->
+        <div class="row">
+            <div class="col-2">
+                <div class="list-group" id="list-tab" role="tablist">
+                    <a class="list-group-item list-group-item-action active" id="list-home-list" data-bs-toggle="list" href="#list-home" role="tab" aria-controls="list-home"><i class="fa-solid fa-user-pen"></i>Info</a>
+                    <a class="list-group-item list-group-item-action" id="list-profile-list" data-bs-toggle="list" href="#list-profile" role="tab" aria-controls="list-profile"><i class="fa-solid fa-share-nodes"></i>Redes</a>
+                    <a class="list-group-item list-group-item-action" id="list-messages-list" data-bs-toggle="list" href="#list-messages" role="tab" aria-controls="list-messages"><i class="fa-solid fa-image"></i>Banner</a>
+                    <a class="list-group-item list-group-item-action" id="list-settings-list" data-bs-toggle="list" href="#list-settings" role="tab" aria-controls="list-settings">Settings</a>
+                </div>
+            </div>
+            <div class="col-10">
+                <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">...</div>
+                    <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">...</div>
+                    <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">...</div>
+                    <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">...</div>
+                </div>
+            </div>
+        </div>
+<!--
+        <div class="container-fluid">
             <div class="row">
                 <div class="col-1">
                 </div>
-                <div class="col-2">
-                    <ul class="list-group">
-                        <li class="list-group-item">Redes</li>
-                        <li class="list-group-item">Banner</li>
-                        <li class="list-group-item">Info</li>
+                <div class="col-2 pt-4">
+                    <img src="assests/Imagenes/CV.jpg" alt="Foto de Perfil" class="rounded-circle img-fluid">
+                    <div class="descripcion mt-2">
+                        <h4>Matias Centurion</h4>
+                        <h4>Full Stack Developer Jr.</h4>
+                        <h5>Arquitecto UBA en búsqueda de ampliar mis conocimientos en el campo de la programación para el desarrollo de software de modelado 3D. </h5>
+                        <i class="fa-solid fa-user-pen"></i>
+                    </div>
+                    <ul class="list-group mt-3">
+                        <li class="list-group-item admin"><i class="fa-solid fa-share-nodes"></i>Redes</li>
+                        <li class="list-group-item admin"><a href="#" data-bs-toggle="modal" data-bs-target="#bannerModal"><i class="fa-solid fa-image"></i>Banner</a></li>
+                        <li class="list-group-item admin"><i class="fa-solid fa-pen-to-square"></i>Info</li>
                         <li class="list-group-item"></li>
                         <li class="list-group-item"></li>
                     </ul>
                 </div>
+                <!-- Modal Banner --
                 <div class="col-8">
+                    <div class="modal fade" id="bannerModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Modal Banner</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <form>
+                                        <div class="mb-3">
+                                            <label for="exampleInputEmail1" class="form-label">Email</label>
+                                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+                                            <input type="password" class="form-control" id="exampleInputPassword1">
+                                            <div id="emailHelp" class="form-text text-white">Ingrese 8 o más caractéres.</div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                                    <button type="button" class="btn btn-primary">Guardar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="col-1">
                 </div>
             </div>
         </div>
-        <div class="container"> <!-- Login -->
-            <div class="row">
-                <div class="col-2">
-                </div>
-                <div class="col-8 login">
-                    <div class="modal-body">
-                        <form>
-                            <div class="mb-3">
-                                <label for="exampleInputEmail1" class="form-label">Email</label>
-                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                            </div>
-                            <div class="mb-3">
-                                <label for="exampleInputPassword1" class="form-label">Contraseña</label>
-                                <input type="password" class="form-control" id="exampleInputPassword1">
-                                <div id="emailHelp" class="form-text text-white">Ingrese 8 o más caractéres.</div>
-                            </div>
-                        </form>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="submit" class="btn btn-secondary">Registrarse</button>
-                        <a class="btn btn-secondary ms-3" href="login.html" role="button">Ingresar</a>
-                    </div>
-                </div>
-                <div class="col-2">
-                </div>
-            </div>
-        </div>
+    -->
     </main>
 
     <footer class="bg-dark text-center text-white">
