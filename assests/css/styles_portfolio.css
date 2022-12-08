@@ -91,6 +91,7 @@ h5 {
 .row {
     justify-content: center;
     align-items: center;
+    margin: 0;
 }
 
 .col-2 {
@@ -113,5 +114,15 @@ h5 {
 a {
     text-decoration: none;
     color: #000000;
+}
 
+.list-group-item {
+    padding: 20px;
+}
+
+#list-tab {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
 }
