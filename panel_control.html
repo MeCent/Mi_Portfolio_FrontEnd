@@ -30,6 +30,7 @@
 
     <main>
         <div class="row">
+            <!-- Barra lateral-->
             <div class="col-3">
                 <div class="list-group" id="list-tab" role="tablist">
                     <a class="list-group-item list-group-item-action active" id="list-home-list" data-bs-toggle="list" href="#list-home" role="tab" aria-controls="list-home"><i class="fa-solid fa-user-pen"></i>Info</a>
@@ -226,67 +227,156 @@
                             </form>
                         </div>
                     </div>
-                    <div class="tab-pane fade" id="list-habilidades" role="tabpanel" aria-labelledby="list-habilidades-list">...</div>
-                    <div class="tab-pane fade" id="list-proyectos" role="tabpanel" aria-labelledby="list-proyectos-list">...</div>
-                </div>
-            </div>
-        </div>
-<!--
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-1">
-                </div>
-                <div class="col-2 pt-4">
-                    <img src="assests/Imagenes/CV.jpg" alt="Foto de Perfil" class="rounded-circle img-fluid">
-                    <div class="descripcion mt-2">
-                        <h4>Matias Centurion</h4>
-                        <h4>Full Stack Developer Jr.</h4>
-                        <h5>Arquitecto UBA en búsqueda de ampliar mis conocimientos en el campo de la programación para el desarrollo de software de modelado 3D. </h5>
-                        <i class="fa-solid fa-user-pen"></i>
+                    <!-- Panel Habilidades -->
+                    <div class="tab-pane fade" id="list-habilidades" role="tabpanel" aria-labelledby="list-habilidades-list">
+                        <div class="container pt-5 pe-5">
+                            <form>
+                                <div class="mb-3">
+                                    <label for="imgSkillUno" class="form-label">Imagen de Skill 1</label>
+                                    <input class="form-control" type="file" id="imgSkillUno">
+                                    <div class="botones mt-3">
+                                        <button type="button" class="btn btn-success">Guardar</button>
+                                        <button type="button" class="btn btn-danger">Eliminar</button>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="porcentajeSkillUno" class="form-label">Porcentaje</label>
+                                    <input type="text" class="form-control" id="porcentajeSkillUno">
+                                    <div class="botones mt-3">
+                                        <button type="button" class="btn btn-success">Guardar</button>
+                                        <button type="button" class="btn btn-danger">Eliminar</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="container pt-5 pe-5">
+                            <form>
+                                <div class="mb-3">
+                                    <label for="imgSkillDos" class="form-label">Imagen de Skill 2</label>
+                                    <input class="form-control" type="file" id="imgSkillDos">
+                                    <div class="botones mt-3">
+                                        <button type="button" class="btn btn-success">Guardar</button>
+                                        <button type="button" class="btn btn-danger">Eliminar</button>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="porcentajeSkillDos" class="form-label">Porcentaje</label>
+                                    <input type="text" class="form-control" id="porcentajeSkillDos">
+                                    <div class="botones mt-3">
+                                        <button type="button" class="btn btn-success">Guardar</button>
+                                        <button type="button" class="btn btn-danger">Eliminar</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="container pt-5 pe-5">
+                            <form>
+                                <div class="mb-3">
+                                    <label for="imgSkillTres" class="form-label">Imagen de Skill 3</label>
+                                    <input class="form-control" type="file" id="imgSkillTres">
+                                    <div class="botones mt-3">
+                                        <button type="button" class="btn btn-success">Guardar</button>
+                                        <button type="button" class="btn btn-danger">Eliminar</button>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="porcentajeSkillTres" class="form-label">Porcentaje</label>
+                                    <input type="text" class="form-control" id="porcentajeSkillTres">
+                                    <div class="botones mt-3">
+                                        <button type="button" class="btn btn-success">Guardar</button>
+                                        <button type="button" class="btn btn-danger">Eliminar</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="container pt-5 pe-5">
+                            <form>
+                                <div class="mb-3">
+                                    <label for="imgSkillCuatro" class="form-label">Imagen de Skill 4</label>
+                                    <input class="form-control" type="file" id="imgSkillCuatro">
+                                    <div class="botones mt-3">
+                                        <button type="button" class="btn btn-success">Guardar</button>
+                                        <button type="button" class="btn btn-danger">Eliminar</button>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="porcentajeSkillCuatro" class="form-label">Porcentaje</label>
+                                    <input type="text" class="form-control" id="porcentajeSkillCuatro">
+                                    <div class="botones mt-3">
+                                        <button type="button" class="btn btn-success">Guardar</button>
+                                        <button type="button" class="btn btn-danger">Eliminar</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="container pt-5 pe-5">
+                            <form>
+                                <div class="mb-3">
+                                    <label for="imgSkillCinco" class="form-label">Imagen de Skill 5</label>
+                                    <input class="form-control" type="file" id="imgSkillCinco">
+                                    <div class="botones mt-3">
+                                        <button type="button" class="btn btn-success">Guardar</button>
+                                        <button type="button" class="btn btn-danger">Eliminar</button>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="porcentajeSkillCinco" class="form-label">Porcentaje</label>
+                                    <input type="text" class="form-control" id="porcentajeSkillCinco">
+                                    <div class="botones mt-3">
+                                        <button type="button" class="btn btn-success">Guardar</button>
+                                        <button type="button" class="btn btn-danger">Eliminar</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="container pt-5 pb-5 pe-5">
+                            <form>
+                                <div class="mb-3">
+                                    <label for="imgSkillSeis" class="form-label">Imagen de Skill 6</label>
+                                    <input class="form-control" type="file" id="imgSkillSeis">
+                                    <div class="botones mt-3">
+                                        <button type="button" class="btn btn-success">Guardar</button>
+                                        <button type="button" class="btn btn-danger">Eliminar</button>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="porcentajeSkillSeis" class="form-label">Porcentaje</label>
+                                    <input type="text" class="form-control" id="porcentajeSkillSeis">
+                                    <div class="botones mt-3">
+                                        <button type="button" class="btn btn-success">Guardar</button>
+                                        <button type="button" class="btn btn-danger">Eliminar</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
                     </div>
-                    <ul class="list-group mt-3">
-                        <li class="list-group-item admin"><i class="fa-solid fa-share-nodes"></i>Redes</li>
-                        <li class="list-group-item admin"><a href="#" data-bs-toggle="modal" data-bs-target="#bannerModal"><i class="fa-solid fa-image"></i>Banner</a></li>
-                        <li class="list-group-item admin"><i class="fa-solid fa-pen-to-square"></i>Info</li>
-                        <li class="list-group-item"></li>
-                        <li class="list-group-item"></li>
-                    </ul>
-                </div>
-                <!-- Modal Banner --
-                <div class="col-8">
-                    <div class="modal fade" id="bannerModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-centered modal-lg">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="exampleModalLabel">Modal Banner</h5>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <!-- Panel Proyectos -->
+                    <div class="tab-pane fade" id="list-proyectos" role="tabpanel" aria-labelledby="list-proyectos-list">
+                        <div class="container pt-5 pb-5 pe-5">
+                            <form>
+                                <div class="mb-3">
+                                    <label for="imgProyecto" class="form-label">Imagen de Proyecto</label>
+                                    <input class="form-control" type="file" id="imgProyecto">
+                                    <div class="botones mt-3">
+                                        <button type="button" class="btn btn-success">Guardar</button>
+                                        <button type="button" class="btn btn-danger">Eliminar</button>
+                                    </div>
                                 </div>
-                                <div class="modal-body">
-                                    <form>
-                                        <div class="mb-3">
-                                            <label for="exampleInputEmail1" class="form-label">Email</label>
-                                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                                        </div>
-                                        <div class="mb-3">
-                                            <label for="exampleInputPassword1" class="form-label">Contraseña</label>
-                                            <input type="password" class="form-control" id="exampleInputPassword1">
-                                            <div id="emailHelp" class="form-text text-white">Ingrese 8 o más caractéres.</div>
-                                        </div>
-                                    </form>
+                                <div class="mb-3">
+                                    <label for="acercaDeProyecto" class="form-label">Acerca de Proyecto</label>
+                                    <textarea class="form-control" id="acercaDeProyecto" style="height: 100px"></textarea>
+                                    <div class="botones mt-3">
+                                        <button type="button" class="btn btn-success">Guardar</button>
+                                        <button type="button" class="btn btn-danger">Eliminar</button>
+                                    </div>
                                 </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                                    <button type="button" class="btn btn-primary">Guardar</button>
-                                </div>
-                            </div>
+                            </form>
                         </div>
                     </div>
                 </div>
-                <div class="col-1">
-                </div>
             </div>
         </div>
-    -->
+
     </main>
 
     <footer class="bg-dark text-center text-white">
