@@ -1,0 +1,32 @@
+<!-- Seccion Proyectos -->
+<section>
+    <div class="container proyectos ms-1 mt-2">
+        <div class="row">
+            <div class="col-10">
+                <h3>Proyectos</h3>
+            </div>
+            <div class="col-2">
+                <button type="button" class="btn btn-dark" title="Agregar Proyecto" routerLink="/nuevoproy" *ngIf="isLogged">
+                    <i class="fa-solid fa-plus"></i>
+                </button>
+            </div>
+        </div>
+        <div class="row p-2" *ngFor="let Proyectos of proyectos">
+            <div class="col-10 descripcion" >
+                <ul>
+                    <h2>{{Proyectos.nombreP}}</h2>
+                    <li>{{Proyectos.descripcionP}}</li>
+                </ul>
+
+            </div>
+            <div class="col-2">
+                <button type="button" class="btn btn-dark" title="Editar Proyecto" routerLink="/editproy/{{Proyectos.id}}" *ngIf="isLogged">
+                    <i class="fa-solid fa-pen-to-square"></i>
+                </button>
+                <button type="button" class="btn btn-dark" title="Eliminar Proyecto" (click)="delete(Proyectos.id)" *ngIf="isLogged">
+                    <i class="fa-solid fa-trash"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+</section>

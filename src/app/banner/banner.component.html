@@ -1,0 +1,20 @@
+<!-- Banner + Perfil -->
+<div class="banner">
+    <div class="container position-absolute bottom-0 start-0 pb-5 ps-5 intro">
+        <div class="row" >
+            <div class="col-3 imagen">
+                <img src={{persona?.img}} alt="Foto de Perfil" class="rounded-circle img-fluid perfil">
+            </div>
+            <div class="col-9 descripcion">
+                <h1 id="nombre">{{persona?.nombre}} {{persona?.apellido}}</h1>
+                <h3 class="text-white">Full Stack Developer Jr.</h3>
+                <h4>{{persona?.descripcion}}</h4>
+                <div class="col-2">
+                    <button type="button" class="btn btn-dark" title="Editar Información" routerLink="/editinfo/1" *ngIf="isLogged">
+                        <i class="fa-solid fa-pen-to-square"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

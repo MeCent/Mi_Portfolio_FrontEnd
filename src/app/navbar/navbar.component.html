@@ -1,0 +1,17 @@
+<!-- Barra de Navegación superior -->
+<nav class="navbar navbar-expand-lg bg-negro">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="https://argentinaprograma.inti.gob.ar" target="_blank">
+            <img src="assets/img/APLogo-20-20.png" alt="Argentina Programa #YoProgramo" width="100px">
+        </a>
+        <ul class="list-group list-group-horizontal">
+            <li class="list-group-item"><a href="https://www.linkedin.com/in/matias-centurion-a1baa9218/" target="_blank"><i class="fa-brands fa-linkedin fa-2x text-white"></i></a></li>
+            <li class="list-group-item"><a href="https://www.facebook.com/m.e.centurion/" target = "_blank"><i class="fa-brands fa-facebook fa-2x text-white"></i></a></li>
+            <li class="list-group-item"><a href="https://github.com/MeCent" target = "_blank"><i class="fa-brands fa-github fa-2x text-white"></i></a></li>
+            <li class="list-group-item"> <!-- Login -->
+                <button type="button" (click)="login()" *ngIf="!isLogged" title="Iniciar Sesión"><i class="fa-solid fa-right-to-bracket fa-2x text-white"></i></button>
+                <button type="button" (click)="onLogOut()" *ngIf="isLogged" title="Cerrar Sesión"><i class="fa-solid fa-right-from-bracket fa-2x text-white"></i></button>
+            </li>
+        </ul>
+    </div>
+</nav>

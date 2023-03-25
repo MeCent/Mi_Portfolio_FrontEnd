@@ -1,0 +1,33 @@
+<!-- Seccion Experiencia Laboral -->
+<section class="mt-3">
+    <div class="container experiencia ms-1 mt-2">
+        <div class="row">
+            <div class="col-10">
+                <h3>Experiencia Laboral</h3>
+            </div>
+            <div class="col-2">
+                <button type="button" class="btn btn-dark" title="Agregar Experiencia" routerLink="/nuevaexp" *ngIf="isLogged">
+                    <i class="fa-solid fa-plus"></i>
+                </button>
+            </div>
+        </div>
+        <div class="row p-2" *ngFor="let Experiencia of expe">
+            <div class="col-10 descripcion" >
+                <ul>
+                    <h2>{{Experiencia.nombreE}}</h2>
+                    <li>Desde: {{Experiencia.inicioE}} - Hasta: {{Experiencia.finE}}</li>
+                    <li>{{Experiencia.descripcionE}}</li>
+                </ul>
+
+            </div>
+            <div class="col-2">
+                <button type="button" class="btn btn-dark" title="Editar Experiencia" routerLink="/editexp/{{Experiencia.id}}" *ngIf="isLogged">
+                    <i class="fa-solid fa-pen-to-square"></i>
+                </button>
+                <button type="button" class="btn btn-dark" title="Eliminar Experiencia" (click)="delete(Experiencia.id)" *ngIf="isLogged">
+                    <i class="fa-solid fa-trash"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
